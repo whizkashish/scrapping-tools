@@ -8,10 +8,10 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
-path = 'G:/chromedriver/chromedriver.exe'
+path = 'Chromedriver path'
 cService = webdriver.ChromeService(executable_path=path)
 
-website = 'https://x.com'
+website = 'Website link' #x.com
 driver = webdriver.Chrome(service=cService, options=chrome_options)
 driver.maximize_window()
 driver.get(website)
